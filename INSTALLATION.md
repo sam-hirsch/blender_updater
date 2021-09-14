@@ -1,18 +1,17 @@
-This tool requires python 3 and PySide6 (QT bindings for python).
+This tool uses python 3 and PySide6 (QT bindings for python).
 
-To install QT for python do:
+Run `install.sh`:
 ```
-python -m venv env
-source env/bin/activate
-pip install pyside6
+$ ./install.sh
 ```
+
+Doing so creates a happy little python environment with everything set up.
 
 The configuration file `blender_updater.conf` allows you to specify your blender git project location and customize the location of builds. Before running the application for the first time, set the `BASE_PATH` variable appropriately. If you followed the building Blender wiki instructions, your `BASE_PATH` is probably `/your/home/folder/blender-git/blender`.
 
  To run the application do:
  ```
- source env/bin/activate
- python blender_updater.py
+$ ./run.sh
  ```
 
 Notes for nerds:
